@@ -1,0 +1,28 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+  "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
+  "proof_id": "wave-a-residual-cloudflare-bot-intent-receipt-1786260727",
+  "environment": {
+    "python": "3.9.6"
+  },
+  "tests": [
+    "unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-09T07:32Z",
+  "artifact_hashes": {
+    "operability_receipt": "c85defee1e02ce0cdcb1c06975bd37e6f174fb0e18331b6dd0826aade4145522"
+  }
+}

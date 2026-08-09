@@ -1,0 +1,10 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+  "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
+  "proof_receipt_digest": "80b24a0b048613c72af97085b31bb9f6554f8bb2eabbc84b1c5b73ec06d950dc",
+  "not_after": 1786347127.216716,
+  "mac": "7cf148649404a14c9df8ba42bc48159ffb60a2604598325abd1e60f19acbb670",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true
+}
