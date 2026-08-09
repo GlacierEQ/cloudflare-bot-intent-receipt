@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.repo-target-contract.v1",
+  "identity": {
+    "repository_id": "GlacierEQ/cloudflare-bot-intent-receipt",
+    "local_path": "/Users/kcbflux/job-app/repos/cloudflare-bot-intent-receipt"
+  },
+  "current": {
+    "state": "VERTICAL_SLICE",
+    "implemented": true,
+    "tested": false,
+    "deployed": false
+  },
+  "target": {
+    "purpose": "# ISSUE CONTRACT\n## Pain\nBots look like users; no declared purpose/budget for automated traffic.\n## Success\n- Intent receipt schema\n- Challenge when missing/expired\n",
+    "central_bottleneck": "see ISSUE_CONTRACT"
+  },
+  "invariants": [],
+  "promotion": {
+    "required_tests": [
+      "unit",
+      "adversarial"
+    ],
+    "require_exact_source_sha": true,
+    "require_receipt": true,
+    "require_nonclaims": true
+  },
+  "nonclaims": [
+    "no employer affiliation",
+    "reference implementation only"
+  ]
+}
