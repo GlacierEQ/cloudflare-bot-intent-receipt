@@ -1,7 +1,7 @@
 {
   "schema": "glaciereq.operability-receipt.v1",
   "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
-  "at": "2026-08-09T07:32Z",
+  "at": "2026-08-09T07:40Z",
   "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
   "entry": "scripts/operate.py",
   "primary_output": {
@@ -10,5 +10,6 @@
     "verdict": "ALLOW"
   },
   "dual_run_ok": true,
-  "result": "PASS"
+  "result": "PASS",
+  "scratch_launch_log": "wave_a/cloudflare-bot-intent-receipt/launch.log"
 }
