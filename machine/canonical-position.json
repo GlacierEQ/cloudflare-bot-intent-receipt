@@ -1,0 +1,22 @@
+{
+  "schema": "glaciereq.repo-canonical-position.v1",
+  "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+  "position_state": "RESOLVED",
+  "role": "company_specific_specialist_system",
+  "company_target": "Cloudflare",
+  "canonical_identity": "bot-intent-receipt",
+  "unique_value": [
+    "automated traffic carries explicit purpose and budget rather than implicit authority",
+    "missing or expired intent receipts trigger challenge instead of trust",
+    "automation authority becomes auditable receipt state"
+  ],
+  "capability_contribution": {
+    "family": "traffic_intent_authority_receipts",
+    "extractable_mechanisms": ["purpose-bound bot receipts", "budget-bound automation authority", "expiry-triggered challenge"],
+    "ownership": "This repository remains the owning Cloudflare-specialist implementation; extraction preserves identity and lineage."
+  },
+  "integration_policy": {"preserve_repository_identity":true,"preserve_lineage":true,"presentation_independent":true,"size_or_loc_not_dispositive":true,"absorption_requires_functional_equivalence":true,"absorption_requires_proof_equivalence":true},
+  "next_evolution": "Add hierarchical traffic budgets, replay-resistant intent identity, and delegated bot authority with explicit attenuation across edge hops.",
+  "evidence_refs": ["ISSUE_CONTRACT.md","machine/target-contract.json","machine/proof_receipt.json","machine/operability_receipt.json","machine/promotion_authority.json"],
+  "nonclaims": ["no Cloudflare affiliation", "not a production Cloudflare traffic-control service"]
+}
