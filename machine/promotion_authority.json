@@ -1,10 +1,11 @@
 {
   "schema": "glaciereq.promotion-authority-grant.v1",
   "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
-  "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
-  "proof_receipt_digest": "e559e7dfc18f7d0dec3011fcfb641e2c27e32547d19e04fe88ffc59f0b7761e1",
-  "not_after": 1786347645.105215,
-  "mac": "a68760873a245f23d1e12091b911ce3482e50d91cc495ebdba8e4fb9885e8bb5",
+  "source_sha": "2b92ab67c8cb6e0acdc82b38f5ffd019e27e8fb8c51eab7665fe60549118d7a2",
+  "proof_receipt_digest": "d54ffdb6ff2a244941d4679e4421ae328390f64ee2e5eb3eca69f81d5b4d71dd",
+  "not_after": 1788927149.234226,
+  "mac": "904293ef87456b2338061df6098935195ed0f433ab889085eff67577e6375e07",
   "issuer": "local_operator_promotion_authority",
-  "verified": true
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
 }

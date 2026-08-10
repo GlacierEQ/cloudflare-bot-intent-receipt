@@ -1,14 +1,15 @@
 {
   "schema": "glaciereq.proof-receipt.v1",
   "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
-  "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
-  "proof_id": "wave-a-residual-green-cloudflare-bot-intent-receipt-1786261245",
+  "source_sha": "2b92ab67c8cb6e0acdc82b38f5ffd019e27e8fb8c51eab7665fe60549118d7a2",
+  "proof_id": "elite-cloudflare-bot-intent-receipt-1786335149",
   "environment": {
-    "python": "3.9.6",
-    "PYTHONPATH": "."
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/cloudflare-bot-intent-receipt:/Users/kcbflux/job-app/repos/cloudflare-bot-intent-receipt/src",
+    "entry": "unittest"
   },
   "tests": [
-    "PYTHONPATH=. python3 -m unittest discover -s tests -v (x2)"
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
   ],
   "adversarial_tests": [
     "tests/test_adversarial.py"
@@ -23,9 +24,8 @@
     "not production deployed",
     "reference implementation only"
   ],
-  "timestamp": "2026-08-09T07:40Z",
+  "timestamp": "2026-08-10T04:12Z",
   "artifact_hashes": {
-    "operability_receipt": "c1373d25dbd273b1a2af211df8896d079e06faa23ca1fcfce45cbabe565d9d34"
-  },
-  "scratch_proof_log": "wave_a/cloudflare-bot-intent-receipt/proof.log"
+    "operability_receipt": "88a2a927fbf6ad370b8f2a211b924d7ac931fab1c1f21e3158538805dec1006b"
+  }
 }

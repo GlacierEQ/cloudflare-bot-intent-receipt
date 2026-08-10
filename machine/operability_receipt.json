@@ -1,15 +1,24 @@
 {
   "schema": "glaciereq.operability-receipt.v1",
   "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
-  "at": "2026-08-09T07:40Z",
-  "source_sha": "7434d145e25090c49ce96a4a377b72b2c9cd41b98609a0339ecbf796139e9f99",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "2b92ab67c8cb6e0acdc82b38f5ffd019e27e8fb8c51eab7665fe60549118d7a2",
   "entry": "scripts/operate.py",
   "primary_output": {
+    "module": "bot_intent",
     "ok": true,
-    "reason": null,
-    "verdict": "ALLOW"
+    "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+    "smoke": {
+      "args": [],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "class",
+      "method": "fingerprint",
+      "module_local": true,
+      "name": "BotIntentReceipt",
+      "result": "1507d645c6b6f9e9f83322a0a61cd2c86f52ff82553fb041183c46d1f5784b1c"
+    }
   },
   "dual_run_ok": true,
-  "result": "PASS",
-  "scratch_launch_log": "wave_a/cloudflare-bot-intent-receipt/launch.log"
+  "result": "PASS"
 }
