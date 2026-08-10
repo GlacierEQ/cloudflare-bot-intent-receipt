@@ -1,31 +1,42 @@
 {
   "schema": "glaciereq.repo-target-contract.v1",
-  "identity": {
-    "repository_id": "GlacierEQ/cloudflare-bot-intent-receipt",
-    "local_path": "/Users/kcbflux/job-app/repos/cloudflare-bot-intent-receipt"
-  },
+  "identity": {"repository_id": "GlacierEQ/cloudflare-bot-intent-receipt"},
   "current": {
-    "state": "VERTICAL_SLICE",
+    "principal_state": "PROMOTED",
     "implemented": true,
-    "tested": false,
+    "tested": true,
+    "adversarial_verified": true,
+    "operable": true,
+    "proof_receipt_bound": true,
+    "authority_bound": true,
     "deployed": false
   },
   "target": {
-    "purpose": "# ISSUE CONTRACT\n## Pain\nBots look like users; no declared purpose/budget for automated traffic.\n## Success\n- Intent receipt schema\n- Challenge when missing/expired\n",
-    "central_bottleneck": "see ISSUE_CONTRACT"
+    "purpose": "Make automated traffic declare bounded purpose and budget through an intent receipt so missing or expired automation authority can be challenged explicitly.",
+    "central_bottleneck": "Automated traffic is difficult to govern when bots are indistinguishable from ordinary users and carry no explicit purpose, budget, or validity window.",
+    "success": [
+      "Intent receipts encode declared automated purpose and budget.",
+      "Missing or expired receipts trigger challenge rather than implicit trust.",
+      "Receipt validation behavior remains deterministic and auditable."
+    ]
   },
-  "invariants": [],
+  "invariants": [
+    "automation without a valid intent receipt is not implicitly trusted",
+    "expired authority cannot be treated as current",
+    "purpose and budget remain explicit receipt properties"
+  ],
+  "donor_plan": {
+    "status": "RESOLVED",
+    "strategy": "INDEPENDENT_MECHANISM_PRESERVED",
+    "donors": [],
+    "basis": "The current repository owns the implemented intent-receipt mechanism; no donor implementation is required to define or operate it.",
+    "future_extraction": "Reusable intent-receipt semantics may be extracted only with lineage, functional/proof equivalence, and preservation of this repository's identity."
+  },
   "promotion": {
-    "required_tests": [
-      "unit",
-      "adversarial"
-    ],
+    "required_tests": ["unit", "adversarial", "operability"],
     "require_exact_source_sha": true,
     "require_receipt": true,
     "require_nonclaims": true
   },
-  "nonclaims": [
-    "no employer affiliation",
-    "reference implementation only"
-  ]
+  "nonclaims": ["no Cloudflare affiliation", "reference traffic-governance engineering system, not a production Cloudflare service"]
 }
