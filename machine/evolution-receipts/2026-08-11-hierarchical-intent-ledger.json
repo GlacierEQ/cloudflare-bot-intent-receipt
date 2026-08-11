@@ -1,0 +1,26 @@
+{
+  "schema": "glaciereq.repo-evolution-receipt.v1",
+  "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+  "consumed_cursor": "next:hierarchical_traffic_budgets_replay_resistant_intent_identity_delegated_authority_attenuation",
+  "candidate_source_sha": "adc535a7f2bcb6a2bf5856c0462ecc9ce0de6667",
+  "workflow_run": 31463256513,
+  "result": "PASS",
+  "observed_lanes": {"python_unittest":"PASS","go":"PASS"},
+  "verified_mechanisms": [
+    "strict intent IDs are one-shot and content rebinding fails closed",
+    "delegated children bind the exact parent fingerprint and delegation depth",
+    "child purpose, rate, request budget, and validity window can only attenuate parent authority",
+    "aggregate child budget reservation cannot exceed parent unconsumed budget",
+    "parent direct traffic and delegated allocations share the same finite request budget",
+    "successful request IDs are replay-resistant without double consumption",
+    "request decisions expose deterministic intent-bound receipts with consumed and remaining budget",
+    "legacy flat gate behavior remains available separately from the strict ledger path"
+  ],
+  "boundaries": [
+    "intent issuer identity and receipt authenticity are not cryptographically verified",
+    "nonce and budget state are in-memory process-local state rather than durable distributed state",
+    "this is a reference authority ledger, not Cloudflare production enforcement",
+    "no Cloudflare affiliation or adoption"
+  ],
+  "next_cursor": "next:signed_intent_issuer_authority_durable_distributed_nonce_and_budget_state"
+}
