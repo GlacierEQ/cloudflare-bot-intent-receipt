@@ -1,1 +1,25 @@
-{"capabilities": ["hyper-scaling"]}
+{
+  "schema": "glaciereq.repo-capabilities.v1",
+  "repository": "GlacierEQ/cloudflare-bot-intent-receipt",
+  "capability_family": "declared_automation_intent_authority",
+  "capabilities": [
+    "declared-bot-purpose-receipts",
+    "time-bounded-traffic-authority",
+    "rps-budget-enforcement",
+    "one-shot-intent-identity",
+    "hierarchical-request-budget-reservation",
+    "delegated-authority-attenuation",
+    "parent-fingerprint-lineage-binding",
+    "successful-request-replay-resistance",
+    "intent-bound-budget-decision-receipts"
+  ],
+  "evidence_refs": [
+    "src/bot_intent.py",
+    "go/bot/bot.go",
+    "tests/test_bot_intent.py",
+    "go/bot/bot_test.go",
+    "machine/evolution-receipts/2026-08-11-hierarchical-intent-ledger.json",
+    "machine/canonical-position.json"
+  ],
+  "truth_boundary": "Strict ledger authority is local and process-bound. Issuer authenticity and durable distributed nonce/budget state are not implemented. No Cloudflare adoption or production enforcement is implied."
+}
