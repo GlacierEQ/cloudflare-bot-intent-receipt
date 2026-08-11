@@ -1,64 +1,49 @@
 {
   "schema": "glaciereq.repo-target-contract.v1",
-<<<<<<< HEAD
-  "identity": {"repository_id": "GlacierEQ/cloudflare-bot-intent-receipt"},
+  "identity": {
+    "repository_id": "GlacierEQ/cloudflare-bot-intent-receipt",
+    "family": "elite-estate",
+    "canonical_identity": "bot-intent-receipt"
+  },
   "current": {
-    "principal_state": "PROMOTED",
+    "state": "EVOLVING",
     "implemented": true,
     "tested": true,
-    "adversarial_verified": true,
-    "operable": true,
-    "proof_receipt_bound": true,
-    "authority_bound": true,
-    "deployed": false
+    "deployed": false,
+    "evolution_generation": 1
   },
   "target": {
-    "purpose": "Make automated traffic declare bounded purpose and budget through an intent receipt so missing or expired automation authority can be challenged explicitly.",
-    "central_bottleneck": "Automated traffic is difficult to govern when bots are indistinguishable from ordinary users and carry no explicit purpose, budget, or validity window.",
-    "success": [
-      "Intent receipts encode declared automated purpose and budget.",
-      "Missing or expired receipts trigger challenge rather than implicit trust.",
-      "Receipt validation behavior remains deterministic and auditable."
-    ]
+    "purpose": "Make automated traffic authority explicit, replay-resistant, hierarchically budgeted, and attenuating across delegated edge actors.",
+    "central_bottleneck": "A flat self-declared RPS ceiling cannot prevent intent-ID rebinding, aggregate delegated budget expansion, request replay, or child authority that exceeds its parent."
   },
   "invariants": [
-    "automation without a valid intent receipt is not implicitly trusted",
-    "expired authority cannot be treated as current",
-    "purpose and budget remain explicit receipt properties"
+    "strict intent identity is immutable once registered",
+    "delegated purpose cannot expand beyond parent purpose",
+    "delegated RPS cannot exceed parent RPS",
+    "delegated validity cannot begin earlier or end later than parent validity",
+    "aggregate delegated request allocation plus parent consumption cannot exceed parent total budget",
+    "successful request IDs cannot consume budget twice",
+    "child receipts bind the exact parent fingerprint and delegation depth",
+    "legacy flat gate remains distinct from the stronger strict ledger path"
   ],
-  "donor_plan": {
-    "status": "RESOLVED",
-    "strategy": "INDEPENDENT_MECHANISM_PRESERVED",
-    "donors": [],
-    "basis": "The current repository owns the implemented intent-receipt mechanism; no donor implementation is required to define or operate it.",
-    "future_extraction": "Reusable intent-receipt semantics may be extracted only with lineage, functional/proof equivalence, and preservation of this repository's identity."
-  },
   "promotion": {
-    "required_tests": ["unit", "adversarial", "operability"],
+    "required_tests": ["python", "go", "adversarial", "hierarchical_budget", "replay_resistance", "attenuation"],
     "require_exact_source_sha": true,
     "require_receipt": true,
     "require_nonclaims": true
   },
-  "nonclaims": ["no Cloudflare affiliation", "reference traffic-governance engineering system, not a production Cloudflare service"]
-=======
-  "identity": {
-    "repository_id": "GlacierEQ/cloudflare-bot-intent-receipt",
-    "family": "elite-estate"
-  },
-  "current": {
-    "state": "PROMOTED",
-    "implemented": true,
-    "tested": true,
-    "deployed": false
-  },
-  "nonclaims": [
-    "no employer affiliation",
-    "no production deployment without receipt"
-  ],
   "donor_plan": {
-    "mode": "none",
+    "status": "RESOLVED",
+    "strategy": "INDEPENDENT_MECHANISM_PRESERVED",
     "donors": []
   },
-  "frozen_at": "2026-08-10T04:12Z"
->>>>>>> a920657 (chore: Hyper Excellence Activation & structural matrix alignment)
+  "nonclaims": [
+    "no Cloudflare affiliation",
+    "no Cloudflare adoption",
+    "reference traffic-authority ledger, not production Cloudflare enforcement",
+    "intent issuer authenticity is not cryptographically verified",
+    "nonce and budget state are in-memory rather than durable distributed state"
+  ],
+  "completed_evolution_receipt": "machine/evolution-receipts/2026-08-11-hierarchical-intent-ledger.json",
+  "next_evolution": "next:signed_intent_issuer_authority_durable_distributed_nonce_and_budget_state"
 }
